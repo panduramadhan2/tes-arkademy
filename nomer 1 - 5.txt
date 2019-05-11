@@ -1,0 +1,116 @@
+//soal nomer 1//
+var biodata = {
+    name : "Pandu Ramadhan",
+    addres : "Sleman,Yogyakarta",
+    is_married : false,
+    scholl : {
+        scholl : "SMK PANGUDI LUHUR MUNTILAN",
+        university : " Universitas Amikom Yogyakarta",
+    },
+    skills : [
+        {
+        name : "front end"
+    },
+        {
+        score : 8
+    },
+    ]
+}
+
+console.log(biodata);
+
+
+//soal nomer 2//
+function usernamevalidation(inputtext){
+    var username = ((/^[a-z.]$/) && (username== 8));
+    if(inputtext.value.match(username)){
+    return true;
+    }
+    else
+    {
+    return false;
+    }
+    }
+
+    function usernamevalidation(inputtext){
+        var email = (( /^[w-.+]+@[a-zA-Z0-9.]+.[a-zA-Z0-9]$/) && (email== 4));
+        if(inputtext.value.match(email)){
+        return true;
+        }
+        else
+        {
+        return false;
+        }
+        }
+    
+
+    //soal nomer 3//
+var campur = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";
+var panjang = 32;
+var random_all = '';
+for (var i=0; i<panjang; i++) {
+    var hasil = Math.floor(Math.random() * campur.length);
+    random_all += campur.substring(hasil,hasil+1);
+}
+function makeid(length) {
+    var result           = '';
+    var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    var charactersLength = characters.length;
+    for ( var i = 0; i < length; i++ ) {
+       result += characters.charAt(Math.floor(Math.random() * charactersLength));
+    }
+    return result;
+ }
+ 
+ console.log(makeid(32));
+
+
+ //soal nomer 4//
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+void main()
+{
+    char str[]="PROGRAMMER";
+    int n,i;
+    x=1;
+    y=1;
+    clrscr();
+    n=str[=];
+    for(i=0;i<n:i++)
+    {
+        gotoxy(x,y);
+        printf("%c",str[i]);
+        x++;
+        y++:
+    }
+    x=n;
+    y=1;
+    for(i=0;i<n;i++)
+    {
+        gotoxy(x.y);
+        printf("%c",str[n-i]);
+        x--;
+        y++
+    }
+    getch ();
+}
+
+
+//soal nomer 5//
+var array = ["a","b","c","d","e","f","g","h","j","l","m","n","o","p","q","r","s","t","u",
+"v","w","x","y","z"];
+    result = array.reduce(function (r, a, i) {
+        if (!i) {
+            return { min: a, max: a};
+        }
+        if (a < r.min) {
+            r.min = a;
+        }
+        if (a > r.max) {
+            r.max = a;
+        }
+        return r;
+    }, undefined);
+
+console.log(result);
